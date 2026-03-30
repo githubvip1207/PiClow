@@ -30,7 +30,7 @@ class KWSEngine:
                 time.sleep(1)
             return False
             
-        log("⏸️  等待唤醒：龙虾老师")
+        log("⏸️ 等待唤醒：龙虾老师")
         stream = self.kws.create_stream()           # 创建语音数据流对象
         chunk = int(0.1 * config.SAMPLE_RATE)       # 设置每次读取的音频数据大小（0.1秒）
         
